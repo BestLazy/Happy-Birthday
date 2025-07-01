@@ -91,15 +91,18 @@
   </div>
   <script>
     function revealSecretAndPlay() {
-      document.getElementById('secret').style.display = 'block';
-      const musicBox = document.getElementById('musicBox');
-      if (!musicBox.innerHTML.includes('<iframe')) {
-        musicBox.style.display = 'block';
-        musicBox.innerHTML += `<iframe
-          src="https://www.youtube.com/embed/iaLE39-9QEU?autoplay=1&rel=0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-          ></iframe>`;
+  document.getElementById('secret').style.display = 'block';
+  const musicBox = document.getElementById('musicBox');
+  if (!musicBox.innerHTML.includes('<iframe')) {
+    musicBox.style.display = 'block';
+    musicBox.innerHTML = `<iframe
+      src="https://www.youtube.com/embed/iaLE39-9QEU?autoplay=1&rel=0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      ></iframe>`;
+  }
+}
+
       }
     }
   </script>
