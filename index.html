@@ -95,11 +95,13 @@
       const musicBox = document.getElementById('musicBox');
       if (!musicBox.innerHTML.includes('<iframe')) {
         musicBox.style.display = 'block';
-        musicBox.innerHTML += `<iframe
-          src="https://youtu.be/iaLE39-9QEU?si=seqBP1qtpKi0YUr4"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-          ></iframe>`;
+        musicBox.innerHTML += 
+          <iframe 
+  src="https://www.youtube.com/embed/iaLE39-9QEU?autoplay=1&rel=0" 
+  allow="autoplay; encrypted-media" 
+  allowfullscreen>
+</iframe>
+
       }
     }
   </script>
